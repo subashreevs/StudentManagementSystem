@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Management System</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles_delete.css">
+</head>
+
+<body>
+	<h1>Delete Student</h1>
+	<hr><br>
+    <table>
+        <form name="regform" id="regform" action="http://localhost:8080/SMS/DeleteServlet" >
+            <tr>
+                <td><label for="id">Register Number: </label></td>
+                <td><input name="id" id="id" type="number" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit" id="submit" ></td>
+                <td><input type="button" value="Reset" id="resetBtn" onclick="myReset()"></td>
+            </tr>
+        </form>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

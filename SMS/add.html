@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Management System</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles_add.css">
+</head>
+
+<body>
+	<h1>Add Student</h1>
+	<hr><br>
+    <table>
+        <form name="regform" id="regform" action="http://localhost:8080/SMS/AddServlet" >
+            <tr>
+                <td><label for="id">Register Number: </label></td>
+                <td><input name="id" id="id" type="number" required></td>
+            </tr>
+            <tr>
+                <td><label for="name">Name: </label></td>
+                <td><input name="name" id="name" type="text" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age: </label></td>
+                <td><input name="age" id="age" type="number" required></td>
+            </tr>
+            <tr>
+                <td><label >Gender: </label></td>
+                    <td><input id="male" type="radio" value="Male" name="gender"><label for="male">Male</label>
+                    <input id="female" type="radio" value="Female" name="gender"><label for="female">Female</label>
+                    <input id="other" type="radio" value="Other" name="gender"><label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address: </label></td>
+                <td><textarea name="address" id="address" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="status">Contact Number: </label></td>
+                <td><input name="status" id="status" type="text" required></td>
+            </tr>
+            <tr>
+                <td><label for="dov">Date of Birth: </label></td>
+                <td><input name="dov" id="dov" type="date" placeholder="dd/mm/yyyy"></td>
+            </tr>
+            <tr>
+                <td><button id="submit">Submit</button></td>
+                <td><button id="resetBtn" onclick="myReset()">Reset</button></td>                
+            </tr>
+        </form>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

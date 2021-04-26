@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Management System</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles_update.css">
+</head>
+
+<body>
+	<h1>Update Student</h1>
+	<hr><br>
+    <table>
+        <form name="regform" id="regform" action="http://localhost:8080/SMS/UpdateServlet" >
+            <tr>
+                <td><label for="id">Register Number: </label></td>
+                <td><input name="id" id="id" type="number" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age: </label></td>
+                <td><input name="age" id="age" type="number" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address: </label></td>
+                <td><textarea name="address" id="address" required></textarea></td>
+            </tr>
+            <tr>
+        
+                <td><label for="status">Contact Number: </label></td>
+                <td><input name="status" id="status" type="text" required></td>
+            </tr>
+            <tr>
+                <td><button id="submit">Submit</button></td>
+                <td><button id="resetBtn" onclick="myReset()">Reset</button></td>
+            </tr>
+        </form>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

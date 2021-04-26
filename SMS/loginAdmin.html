@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Management System</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>Admin Login</h1>
+	<hr><br>
+    <table>
+        <form id="loginform">
+            <tr>
+                <td><label for="username">Username: </label></td>
+                <td><input name="username" id="username" type="text" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password: </label></td>
+                <td><input name="password" id="password" type="password" required></td>
+            </tr>
+            <tr>
+                <td><button id="submit" onclick="checkCreds()">Submit</button></td>
+                <td><button id="resetBtn" onclick="myReset()">Reset</button></td>
+               
+            </tr>
+        </form>
+    </table>
+
+    <script>
+
+        function myReset(){
+            document.getElementById("loginform").reset();
+        }
+        
+        function checkCreds(){
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+        
+            if(user === "admin" && pass === "admin123"){
+                document.getElementById("username").value = "";
+                document.getElementById("password").value = "";
+                window.open("homeAdmin.html");
+            }
+            else{
+                alert("Invalid credentials. Please re-enter");
+                document.getElementById("username").value = "";
+                document.getElementById("password").value = "";
+                document.getElementById("username").focus();
+            }
+        }
+        
+        </script></body>
+</html>

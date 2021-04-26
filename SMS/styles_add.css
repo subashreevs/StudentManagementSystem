@@ -1,0 +1,39 @@
+body{
+    font-size: 16pt;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background: rgb(10,11,41);
+    background: radial-gradient(circle, #301b3f 20%, #000 69%); 
+    color: white;
+    height: 100vh;
+}
+
+h1{
+	font-size: 50pt;
+	text-align: center;
+	color: white;
+}
+
+table{
+	padding-left: 300px;
+	text-align: justify;
+    width: 100%;
+    border-spacing: 15px;
+}
+
+#submit, #resetBtn{
+	margin-left: 20px;
+	padding: 5px 8px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #301b3f; 
+	text-align: center;
+	text-decoration: none;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px;
+}
+#submit:hover, #resetBtn:hover{
+    background-color: #230d33;
+}
